@@ -242,6 +242,7 @@ namespace Microsoft.Azure.ServiceBus.UnitTests.Management
                     new SubscriptionDescription(topicName, subscriptionName),
                     new RuleDescription("rule0", new FalseFilter()));
 
+                //Add more tests for datetime and timespan
                 var sqlFilter = new SqlFilter("stringValue = @stringParam AND intValue = @intParam AND longValue = @longParam AND dateValue = @dateParam AND timeSpanValue = @timeSpanParam");
                 sqlFilter.Parameters.Add("@stringParam", "string");
                 sqlFilter.Parameters.Add("@intParam", (int)1);
